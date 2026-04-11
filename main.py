@@ -13,7 +13,7 @@ def main():
         screen.fill("black")
         pygame.display.flip()
         dv = clock.tick(60)/1000
-        print(dv)
+  #      print(dv)
     print("Starting Asteroids with pygame version: 2.6.1")
     print(f"Screen width: {SCREEN_WIDTH}")
     print(f"Screen height: {SCREEN_HEIGHT}")
