@@ -16,6 +16,7 @@ def main():
         player.draw(screen)
         pygame.display.flip()
         dv = clock.tick(60)/1000
+        player.update(dv)
   #      print(dv)
     print("Starting Asteroids with pygame version: 2.6.1")
     print(f"Screen width: {SCREEN_WIDTH}")
