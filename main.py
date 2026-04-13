@@ -1,4 +1,5 @@
 import sys
+from shot import Shot
 from logger import log_event
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
@@ -19,7 +20,7 @@ def main():
     Player.containers = (updatable, drawable)
     Asteroid.containers = (asteroids, updatable, drawable)
     AsteroidField.containers = (updatable,)
-    shots.containers = (shots,drawable,updatable)
+    Shot.containers = (shots,drawable,updatable)
     asteroid_field = AsteroidField()
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     dt = 0
