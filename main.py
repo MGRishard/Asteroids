@@ -3,7 +3,7 @@ from logger import log_event
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
 import pygame
-from constants import SCREEN_HEIGHT, SCREEN_WIDTH
+from constants import SCREEN_HEIGHT, SCREEN_WIDTH, PLAYER_SHOOT_SPEED
 from logger import log_state
 from player import Player
 
@@ -19,6 +19,7 @@ def main():
     Player.containers = (updatable, drawable)
     Asteroid.containers = (asteroids, updatable, drawable)
     AsteroidField.containers = (updatable,)
+    shots.containers = (shots,drawable,updatable)
     asteroid_field = AsteroidField()
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     dt = 0
